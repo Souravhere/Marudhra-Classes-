@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+  <title>Marudhra Classes & Library</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      display: inline-block;
+      font-size: 24px;
+      margin-bottom: 10px;
+      vertical-align: middle;
+      color: #333;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #555;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 2px solid #eabdbd;
+      border-radius: 6px;
+      background-color: #ffffff;
+      box-shadow: 0px -2px 4px rgba(61, 130, 215, 0.507);
+    }
+
+    .course-thumbnail {
+      margin-bottom: 10px;
+    }
+
+    .course-thumbnail img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .course-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .course-description {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .btn-container {
+      text-align: right;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #83c5be;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .btn-more-info {
+      background-color: #eb6379;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmqFxadlZlo9CRs49jsZznofRzfLoRSTzlm0Veewu2IfC5A4NFyLjrZIaCE0TvxJ5gicFAZl4wuJjZ-hsb1qS237mnD0ILZ8-uS8OgX9vCZgM34iMyb55EK6fuGx2cesuUpV9lVEzqyd_30FmphPi02-mukUCjmhRVWsmA24w83ktZNo70L9QHULqYRIcE/s320/photo_2023-07-15_15-51-00%20%282%29.jpg" alt="Company Logo">
+      <h1>Marudhra Classes & Library</h1>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="emoji">&#128220;</span> About Us
+          </a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="#"><span class="emoji">&#128203;</span> History</a></li>
+              <li><a href="#"><span class="emoji">&#128187;</span> Mission</a></li>
+              <li><a href="#"><span class="emoji">&#128202;</span> Vision</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#"><span class="emoji">&#128222;</span> Contact Us</a></li>
+        <li>
+          <a href="#">
+            <span class="emoji">&#128218;</span> Syllabus
+          </a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="#"><span class="emoji">&#128218;</span> Class 1</a></li>
+              <li><a href="#"><span class="emoji">&#128218;</span> Class 2</a></li>
+              <li><a href="#"><span class="emoji">&#128218;</span> Class 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#"><span class="emoji">&#128197;</span> Timetable</a></li>
+        <li><a href="#"><span class="emoji">&#128221;</span> Notes</a></li>
+        <li><a href="#"><span class="emoji">&#128218;</span> Mock Test</a></li>
+        <li><a href="#"><span class="emoji">&#128203;</span> Results</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--For Founder box-->
+    <div class="containerfounder">
+      <div class="founder-box">
+        <h2 style="text-align: center;  margin-bottom: 20px;">Founder Message</h2>
+          <img class="founder-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmqFxadlZlo9CRs49jsZznofRzfLoRSTzlm0Veewu2IfC5A4NFyLjrZIaCE0TvxJ5gicFAZl4wuJjZ-hsb1qS237mnD0ILZ8-uS8OgX9vCZgM34iMyb55EK6fuGx2cesuUpV9lVEzqyd_30FmphPi02-mukUCjmhRVWsmA24w83ktZNo70L9QHULqYRIcE/s1068/photo_2023-07-15_15-51-00%20%282%29.jpg" alt="Founder Image">
+          <h3>Founder: Hanuman Prasad</h3>
+          <p>⏩ Marudhra Classes & Library</p>
+        
+          <p class="founder-description">Passionate about education and empowering students to succeed.</p>
+      </div>
+
+      <!--
+        <div class="motivation-box">
+          <h3 style="margin-bottom: 20px;">Motivational Quotes</h3>
+          <div class="quote-container">
+              <div class="quote active">
+                  <p class="quote-text">
+                      "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
+                  </p>
+              </div>
+              <div class="quote">
+                  <p class="quote-text">
+                      "The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education." - Martin Luther King Jr.
+                  </p>
+              </div>
+              <div class="quote">
+                  <p class="quote-text">
+                      "Education is not the filling of a pail, but the lighting of a fire." - William Butler Yeats
+                  </p>
+              </div>
+              <div class="quote">
+                  <p class="quote-text">
+                      "The more that you read, the more things you will know, the more that you learn, the more places you'll go." - Dr. Seuss
+                  </p>
+              </div>
+              <div class="quote">
+                  <p class="quote-text">
+                      "Education is the passport to the future, for tomorrow belongs to those who prepare for it today." - Malcolm X
+                  </p>
+              </div>
+          </div>
+      </div>
+      -->
+
+      <div></div>
+  </div>
+<!-- for Popular Courses-->
+    <h2 style="text-align: center;  margin-bottom: 20px; margin-top: 20px;">Popular Courses</h2>
+    <div class="course-card">
+      <div class="course-thumbnail">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfcy04iRASU3gli1ZsLrKnqcNeih_V9AkYQDQyQldhARX-t9ahZ00XndgvMs_5wMSua_beR2vfW7H6h5tHvuDeH_5L45v_ApGL0CFsZYDoIhbEC1l-AM2i2I0du6Uy7uUin0rdmsvu8oTYLWYLRj_EoMw3fNAxv14mrUAOSHDLYodDJ7VPGa752zB3_ttn/s1200/photo_2023-07-16_12-07-10.jpg" alt="Course 1 Thumbnail">
+      </div>
+      <div class="course-details">
+        <h3 class="course-title">RAS Course By Marudhra Classes</h3>
+        <p style="color: lightgreen; font-size: 12px;"><b>OFFLINE MODE</b></p>
+        <p class="course-description">Recirculatory Aquaculture System (RAS) is a technology where water is recycled and reused after mechanical and biological filtration and removal of suspended matter and metabolites. This method is used for high- density culture of various species of fish, utilizing minimum land area and water.</p>
+        <div class="btn-container">
+          <a href="UnderConstruction.html" class="btn">Enroll Now</a>
+          <a href="UnderConstruction.html" class="btn btn-more-info">More Info</a>
+        </div>
+      </div>
+    </div>
+    <div class="course-card">
+      <div class="course-thumbnail">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLZDOQqNHll4CXC6OkDLhjAFDyDBKcoHWo5cDKrfiZMQYdrjMi_DFNrkcO8vRnn8uyqQWf2EiAbxT-xSvL-CYMnm0b2XhfTVWsqBesbH7hoLN0yVWkHsqRwfZ-1nDfJgkBFodKsC6BcAMy_elGBMtfsAyopmmmD6jMK_vOfbYImZZUMIFG2J3oIcqim9g6/s1200/photo_2023-07-16_12-31-56.jpg" alt="Course 2 Thumbnail">
+      </div>
+      <div class="course-details">
+        <h3 class="course-title">3rd Grade Teacher By Marudhra Classes</h3>
+        <p style="color: lightgreen; font-size: 12px;"><b>OFFLINE MODE</b></p>
+        <p class="course-description">Third-grade teachers are professional instructors in charge of students in the third grade. They help kids fall in love with learning in the classroom and instruct their students in math, science, social studies, history, and language. Third-graders are usually around eight years old.</p>
+        <div class="btn-container">
+          <a href="UnderConstruction.html" class="btn">Enroll Now</a>
+          <a href="UnderConstruction.html" class="btn btn-more-info">More Info</a>
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="course-card">
+      <div class="course-thumbnail">
+        <img src="course3-thumbnail.jpg" alt="Course 3 Thumbnail">
+      </div>
+      <div class="course-details">
+        <h3 class="course-title">Course Title 3</h3>
+        <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate scelerisque nibh, eget pulvinar mauris porta at.</p>
+        <div class="btn-container">
+          <a href="#" class="btn">Enroll Now</a>
+          <a href="#" class="btn btn-more-info">More Info</a>
+        </div>
+      </div>
+    </div>
+    -->
+    <div class="facility-box">
+        <h2>Our Facilities</h2>
+        <div class="facility-item">
+          <span class="logo">📶</span>
+          <span>Fully WiFi Classroom</span>
+        </div>
+        <div class="facility-item">
+          <span class="logo">❄️</span>
+          <span>Air Conditioner Classroom</span>
+        </div>
+        <div class="facility-item">
+          <span class="logo">🖥️</span>
+          <span>Digital Board Classroom</span>
+        </div>
+        <div class="facility-item">
+            <span class="logo">💧</span>
+            <span>Cold Water</span>
+          </div>
+        <div class="facility-item">
+          <span class="logo">🎥</span>
+          <span>CCTV</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 20px;">Our Gallery</h2>
+        <div class="slider-container">
+          <img class="slider-image active" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA_sL4vX6NticlqTcHst9DXXg8kgMnXa8qsjj2hkSI6iH1T4Qhlx2gJfT5sRCA-9x7Gcqx_bwDDCk2F3YGVklpgU6ooJf4pU22JZvNmWyWFTn3FR7QBPrfOhUcwAWV_-UQ1tKtkrNSPfrxJzwU0ZOwX5hQeN92PVN29OSFSgF6UjOCYg0U1SVOYSIRdmYZ/s320/photo_2023-07-15_15-50-53.jpg" alt="Image 1">
+          <img class="slider-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-Dt1AW2ZXdOMIZTAP9SSPXyxkF4TjzKOVIW1udo8OgZZi06vYlVnJ0PvhzyqnAl7OLgAi_b-TCn2VCJ478Cz24SO0nN3Fc_iH2j3YSvAldIZ87AWUz_0spBNEe8op-yGeaD8tnGrDEm0NFn3NRJKhcxNimScsxl6Q__iglZS0Ce-cxDZGvx4hzE2GhkIQ/s320/photo_2023-07-15_15-50-57.jpg" alt="Image 2">
+          <img class="slider-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqXNjgZqH3MOcH2zd8fhDXZOeQbIso4b2AxCsAVzn5iOjKS85L2LlxE1CHWIQ5qeE_L9Czo2J8vNIwpZx8aop56lXgxk4KYUmWeHcjgEyrcT1-CsnrEbVvtaKgNTbuy5h3r9XO__32Dy90czLVvCNP40gZq8IJw5rFc_9OvNnCtwo1ftHgW6Cpr4eu11HE/s320/photo_2023-07-15_15-50-59.jpg" alt="Image 3">
+          <img class="slider-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip6mu4TiZYZtgGq9pm9LAB9HR3C79UNks8CFxPbwjkpQeZM9QBoz8R3dWB3HhJqUpumgOBh5bVwErLNfjWEb-WjXwKBxU5NalqM-GvIRjBYRUPUap8eiqVHaxuQXMF0-i0udbe_xOtiGcTmj1TRE3Tgnpf7_QdBrWnxDftZxfgRzNHkQIe-JFVF3Xn10I8/s1280/photo_2023-07-15_15-51-00.jpg" alt="Image 4">
+          <img class="slider-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNwBtlOSRg5s5m5OKOuQwu3-kRdBT27pXKne1qoLTRykPk-YlIlcnJ2veGhAbp2jV6RKwwk05-DttEVFlLDful0Quv_t80-ymg7mG2l0hVprpZwq2JQBUHmLnkT3u7jzfYCIR0iS69maRIl2O1Q91r7UvOqfAHdhXyJ2FIQbfM-I36WsI1L2qdYn2Xi0qX/s1280/photo_2023-07-15_15-57-27.jpg" alt="Image 5">
+        </div>
+    
+        <div class="slider-pagination">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    <!--for teachers card-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 20px;">Our Team</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmqFxadlZlo9CRs49jsZznofRzfLoRSTzlm0Veewu2IfC5A4NFyLjrZIaCE0TvxJ5gicFAZl4wuJjZ-hsb1qS237mnD0ILZ8-uS8OgX9vCZgM34iMyb55EK6fuGx2cesuUpV9lVEzqyd_30FmphPi02-mukUCjmhRVWsmA24w83ktZNo70L9QHULqYRIcE/s1068/photo_2023-07-15_15-51-00%20%282%29.jpg" alt="Teacher 1">
+            <h3>Hanuman Prasad</h3>
+            <p>Hello Everyone, I am the founder of Marudhra Classes and now we start our Library By the name of Marudhra Library (If You are interested than tap on our call button to contact us).
+            </p>
+            <p>Thank You</p>
+            
+            <p class="experience">Founder</p>
+            <div class="icons">
+              <a href="tel:9799732653">
+                &#128222;
+              </a>
+              <a href="mailto:souravchhimpa3@gmail.com">
+                &#9993;
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmqFxadlZlo9CRs49jsZznofRzfLoRSTzlm0Veewu2IfC5A4NFyLjrZIaCE0TvxJ5gicFAZl4wuJjZ-hsb1qS237mnD0ILZ8-uS8OgX9vCZgM34iMyb55EK6fuGx2cesuUpV9lVEzqyd_30FmphPi02-mukUCjmhRVWsmA24w83ktZNo70L9QHULqYRIcE/s1068/photo_2023-07-15_15-51-00%20%282%29.jpg" alt="Teacher 2">
+            <h3>Radhe Shyam</h3>
+            <p>Hello Everyone, I am the Director of Marudhra Classes and now we start our Library By the name of Marudhra Library (If You are interested than tap on our call button to contact us).</p>
+            <p>Thank You</p>
+            <p class="experience">Director</p>
+            <div class="icons">
+              <a href="tel:9413838425">
+                &#128222;
+              </a>
+              <a href="mailto:souravchhimpa3@gmail.com">
+                &#9993;
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmqFxadlZlo9CRs49jsZznofRzfLoRSTzlm0Veewu2IfC5A4NFyLjrZIaCE0TvxJ5gicFAZl4wuJjZ-hsb1qS237mnD0ILZ8-uS8OgX9vCZgM34iMyb55EK6fuGx2cesuUpV9lVEzqyd_30FmphPi02-mukUCjmhRVWsmA24w83ktZNo70L9QHULqYRIcE/s1068/photo_2023-07-15_15-51-00%20%282%29.jpg" alt="Teacher 3">
+            <h3>Teacher 1</h3>
+            <p>Science</p>
+            <p class="experience">6 years of experience</p>
+            <div class="icons">
+              <a href="tel:5555555555">
+                &#128222;
+              </a>
+              <a href="mailto:david@example.com">
+                &#9993;
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmqFxadlZlo9CRs49jsZznofRzfLoRSTzlm0Veewu2IfC5A4NFyLjrZIaCE0TvxJ5gicFAZl4wuJjZ-hsb1qS237mnD0ILZ8-uS8OgX9vCZgM34iMyb55EK6fuGx2cesuUpV9lVEzqyd_30FmphPi02-mukUCjmhRVWsmA24w83ktZNo70L9QHULqYRIcE/s1068/photo_2023-07-15_15-51-00%20%282%29.jpg" alt="Teacher 4">
+            <h3>Teacher 2</h3>
+            <p>History</p>
+            <p class="experience">4 years of experience</p>
+            <div class="icons">
+              <a href="tel:1111111111">
+                &#128222;
+              </a>
+              <a href="mailto:lisa@example.com">
+                &#9993;
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmqFxadlZlo9CRs49jsZznofRzfLoRSTzlm0Veewu2IfC5A4NFyLjrZIaCE0TvxJ5gicFAZl4wuJjZ-hsb1qS237mnD0ILZ8-uS8OgX9vCZgM34iMyb55EK6fuGx2cesuUpV9lVEzqyd_30FmphPi02-mukUCjmhRVWsmA24w83ktZNo70L9QHULqYRIcE/s1068/photo_2023-07-15_15-51-00%20%282%29.jpg" alt="Teacher 5">
+            <h3>Teacher 3</h3>
+            <p>Physics</p>
+            <p class="experience">9 years of experience</p>
+            <div class="icons">
+              <a href="tel:9999999999">
+                &#128222;
+              </a>
+              <a href="mailto:michael@example.com">
+                &#9993;
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+  </main>
+
+
+  <footer class="footer">
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Service 1</li>
+          <li>Service 2</li>
+          <li>Service 3</li>
+          <li>More</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Test Series</h3>
+        <ul>
+          <li>Test 1</li>
+          <li>Test 2</li>
+          <li>Test 3</li>
+          <li>More</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Notes</h3>
+        <ul>
+          <li>Notes 1</li>
+          <li>Notes 2</li>
+          <li>Notes 3</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-us">
+      <div class="logo">
+        <i class="fas fa-info-circle"></i>
+      </div>
+      <div class="text">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum fringilla enim, id pretium justo lacinia eu. Aliquam vel tristique leo.</p>
+      </div>
+    </div>
+
+    <a href="#" class="message-button"><i class="fab fa-whatsapp"></i> Message Us</a>
+
+    <p class="copyright">
+      &copy; 2023 Marudhra Classes .All rights reserved.<br> Designed And Powered By <a href="sourav.html" style="color: rgb(148, 204, 241);"><b>Sourav Chhimpa</b></a>. 
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+</body>
+<script src="myjs.js"></script>
+</html>
