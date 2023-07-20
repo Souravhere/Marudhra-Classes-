@@ -425,7 +425,7 @@ p:last-child {
     const now = new Date();
     const hours = now.getHours();
 
-    if (hours >= 9 && hours < 19) {
+    if (hours >= 11 && hours < 19) {
         sendWhatsAppMessage();
     } else {
         alert('Sourav is currently not available. Please try again during working hours (11 AM - 7 PM).');
