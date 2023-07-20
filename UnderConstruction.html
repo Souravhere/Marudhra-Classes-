@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Under Construction Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 48px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px #000;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .emoji {
+      font-size: 64px;
+      margin-bottom: 10px;
+      animation: bounce 1s infinite;
+    }
+
+    .clock {
+      font-size: 32px;
+      margin: 10px 0;
+      animation: swipeUp 1s ease-in-out infinite;
+    }
+
+    @keyframes swipeUp {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .date {
+      font-size: 20px;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .message {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .button {
+      width: 180px;
+      height: 60px;
+      background-color: #007bff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 20px;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.3s;
+      position: relative;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .button i {
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background-color: #1a1a1a;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: twinkle 3s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .title {
+        font-size: 36px;
+      }
+
+      .emoji {
+        font-size: 48px;
+      }
+
+      .clock {
+        font-size: 28px;
+      }
+
+      .date {
+        font-size: 18px;
+      }
+
+      .message {
+        font-size: 16px;
+      }
+
+      .button {
+        font-size: 16px;
+        width: 150px;
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars">
+    <div class="star" style="top: 40%; left: 80%;"></div>
+    <div class="star" style="top: 20%; left: 20%;"></div>
+    <div class="star" style="top: 70%; left: 60%;"></div>
+    <!-- Add more stars here -->
+  </div>
+  <div class="container">
+    <div class="emoji">🚧</div>
+    <div class="title">Under Construction</div>
+    <div class="clock" id="clock">12:00:00</div>
+    <div class="date" id="date">January 1, 2023</div>
+    <div class="message">We are working on this page. We will be coming soon!</div>
+    <div class="buttons">
+      <a class="button" href="sourav.html">
+        <i class="fas fa-user"></i>
+        Know About Developer
+      </a>
+      <a class="button" href="index.html">
+        <i class="fas fa-home"></i>
+        Back to Home
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Function to update the clock and date in real-time
+    function updateTime() {
+      const now = new Date();
+      const clockElement = document.getElementById("clock");
+      const dateElement = document.getElementById("date");
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      const seconds = String(now.getSeconds()).padStart(2, "0");
+      const month = now.toLocaleString("en-US", { month: "long" });
+      const day = now.getDate();
+      const year = now.getFullYear();
+
+      clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+      dateElement.textContent = `${month} ${day}, ${year}`;
+    }
+
+    // Update the clock and date every second with a smooth transition effect
+    function updateTimeSmooth() {
+      const clockElement = document.getElementById("clock");
+      const dateElement = document.getElementById("date");
+      const newTime = new Date();
+
+      // Fade out the clock and date elements
+      clockElement.style.opacity = 0;
+      dateElement.style.opacity = 0;
+
+      setTimeout(() => {
+        // Update the time and date
+        updateTime();
+
+        // Fade in the updated clock and date elements
+        clockElement.style.opacity = 1;
+        dateElement.style.opacity = 1;
+      }, 500); // Wait for 0.5 seconds for a smooth transition
+
+      // Repeat the updateTimeSmooth function every second
+      setTimeout(updateTimeSmooth, 1000);
+    }
+
+    // Initial call to updateTimeSmooth
+    updateTimeSmooth();
+  </script>
+</body>
+</html>
